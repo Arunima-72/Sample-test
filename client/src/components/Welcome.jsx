@@ -3,7 +3,7 @@ import React from 'react'
 const Welcome = () => {
   return (
     <div>
-      <h2  color=" Green"style={{fontFamily:"cursive"}}>
+      <h2  tyle={{fontFamily:"cursive",fontColor:"Green"}}>
         Welocome! OTP verified successfully
       </h2>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
+
 const EmailForm = () => {
     const [email,setEmail]=useState("");
     const [msg,setmsg]=useState("");
@@ -22,7 +23,8 @@ const EmailForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-<label>Email</label><br></br>
+<label style={{fontFamily:"-moz-initial",fontSize:"large",fontColor:"blue"}}>Email</label><br></br>
+
 <input type='email' required value={email}  onChange={(e)=> setEmail(e.target.value)}/><br></br><br></br>
 <button type='submit' color='blue' style={{backgroundColor:"blue"}}>Send OTP</button>
       </form>

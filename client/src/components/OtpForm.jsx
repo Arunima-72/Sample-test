@@ -29,9 +29,9 @@ const OtpForm = () => {const [otp, setOtp] = useState("");
   return (
     <div>
       <form onSubmit={handleSubmit}>
-<label>Enter OTP</label>
-<input type='text' required value={otp}  onChange={(e)=> setOtp(e.target.value)}/>
-<button type='submit'>Verify OTP</button>
+
+<input type='text' required value={otp} placeholder='Enter OTP' onChange={(e)=> setOtp(e.target.value)}/><br></br><br></br>
+<button type='submit' style={{backgroundColor:"blue"}}>Verify OTP</button>
       </form>
     </div>
   )
